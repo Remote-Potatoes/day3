@@ -172,3 +172,74 @@ function canWithdrawMoney(bankAccount) {
 
 // if i call withdrawmoney with 1000 should be true
 // expect canWithdrawMoney(1000) toBe -> true
+
+console.clear();
+
+const arr = ["word", "sentence", "paragraph", "chapter", "article", "book"];
+log(arr[2]);
+const str = "Andre";
+str[0] = "O";
+log(str);
+arr[0] = "the whole damned thing";
+log(arr);
+
+arr.push("collection");
+log(arr);
+arr.pop();
+log(arr);
+arr.unshift("letter");
+log(arr);
+arr.shift();
+log(arr);
+
+arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+// arr.shift();
+
+log(arr);
+
+console.clear();
+const fromChapterUp = arr.slice(2);
+console.log("fromChapterUp:", fromChapterUp);
+fromChapterUp.splice(5, 0, "waterfalls");
+console.log("fromChapterUp:", fromChapterUp);
+
+for (let i = 0; i < fromChapterUp.length; i++) {
+  console.log(fromChapterUp[i]);
+}
+
+for (let word of fromChapterUp) {
+  console.log("word:", word);
+}
+
+let theName = "John";
+
+let starting = "";
+
+for (let i = 0; i < theName.length; i++) {
+  starting += theName[i].toUpperCase() + " ";
+}
+
+function capitalizaPlusSpace(name) {
+  let starting = "";
+
+  for (let i = 0; i < name.length; i++) {
+    starting += name[i].toUpperCase() + " ";
+  }
+  return starting;
+}
+
+const hacker1 = "Daniel";
+
+console.log(capitalizaPlusSpace("Filipe"));
+console.log(capitalizaPlusSpace(hacker1));
